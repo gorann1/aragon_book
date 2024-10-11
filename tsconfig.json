@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "ES2019",
+      "DOM"
+    ],
+    "jsx": "react",
+    "module": "ES6",
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": {
+      "*":["node_modules/*", "app/packs/*"]
+    },
+    "sourceMap": true,
+    "target": "ES2019",
+    "noEmit": true,
+  },
+  "exclude": [
+    "**/*.spec.ts",
+    "vendor",
+    "public",
+    "node_modules",
+  ],
+  "compileOnSave": false
+}

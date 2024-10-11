@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "private": true,
+  "packageManager": "yarn@4.3.1",
+  "scripts": {
+    "build.js": "esbuild.app/javascript/*.*--bundle --sourcemap --outdir=ađ/assets/builds",
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets",
+    "dev": "tsc-watch --noClear -p tsconfig.json --onSuccess \"yarn build.js\""
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.8.1",
+    "@typescript-eslint/parser": "^8.8.1",
+    "@unocss/postcss": "^0.63.4",
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.6.3",
+    "unocss": "^0.63.4"
+  },
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.2",
+    "@hotwired/turbo-rails": "^8.0.10",
+    "autoprefixer": "^10.4.20",
+    "corepack": "^0.29.4",
+    "esbuild": "^0.24.0",
+    "postcss": "^8.4.47"
+  }
+}
